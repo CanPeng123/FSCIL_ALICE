@@ -62,7 +62,7 @@ def get_base_train_dataloader(args):
 
 def get_new_dataloader(args, session):
     txt_path_list = []
-    txt_path = "/home/FSCIL_ALICE/DATA/CEC_index_list/" + args.dataset + "/session_" + str(session + 1) + '.txt'
+    txt_path = "/home/FSCIL_ALICE/DATA/" + args.dataset + "/session_" + str(session + 1) + '.txt'
     txt_path_list.append(txt_path)
 
     if args.dataset == 'cifar100':
@@ -92,9 +92,9 @@ def get_incremental_dataset_fs(args, session=None):
     txt_path_list = []
     for i in range(session + 1):
         if i == 0:
-            txt_path = "/home/FSCIL_ALICE/DATA/CEC_index_list/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
+            txt_path = "/home/FSCIL_ALICE/DATA/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
         else:
-            txt_path = /home/FSCIL_ALICE/DATA/CEC_index_list/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
+            txt_path = /home/FSCIL_ALICE/DATA/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
         temp_class_index = open(txt_path).read().splitlines()
         for j in range(len(temp_class_index)):
             class_index.append(temp_class_index[j])
