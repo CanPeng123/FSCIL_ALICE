@@ -1,0 +1,22 @@
+python main_base.py \
+--dataset cub200 \
+--data_root ./DATA \
+--exp_dir ./exp/CUB200_base-2-data_batch-size-512_epoch-100_lr-1e-3 \
+--arch resnet18 \
+--learning_rate 0.001 \
+--epochs_base 100 \
+--epochs_new 100 \
+--weight_decay 5e-4 \
+--momentum 0.9 \
+--milestones 60 70 \
+--gamma 0.1 \
+--batch_size 512 \
+--eval_freq 1 \
+--save_freq 25 \
+--feat_dim 2048 \
+--loss_type cosface \
+--loss_s 30 \
+--loss_m 0.4 \
+--seed 1 \
+--data_transform 
+
