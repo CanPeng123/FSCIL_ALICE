@@ -1,7 +1,7 @@
 python main_base.py \
 --dataset cub200 \
 --data_root ./DATA \
---exp_dir ./exp/CUB200_base-2-data_batch-size-512_epoch-100_lr-1e-3 \
+--exp_dir ./exp/CUB200_base-data-2_batch-512_epoch-100_lr-1e-3_milestones-60-70_seed-1_s-30_m-4e-1 \
 --arch resnet18 \
 --learning_rate 0.001 \
 --epochs_base 100 \
