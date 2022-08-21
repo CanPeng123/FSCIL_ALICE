@@ -30,6 +30,8 @@ Can Peng, Kun Zhao, Tianren Wang, Meng Li, Brian C. Lovell; In: ECCV 2022.
 
 **run_inc_ncm_miniImageNet.sh**: config and dataset settings for incremental session evaluation on miniImageNet dataset.
 
+To perform experiments on different incremental sessions, please modify the input arguments - "num_cls" and "current_session" accordingly.
+
 To perform experiments on different few-shot settings (5-shot or 1-shot), please modify the input arguments - "used_img" and "balanced" accordingly.
 
 ## Acknowledgements
