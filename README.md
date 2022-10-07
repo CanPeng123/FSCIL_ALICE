@@ -35,5 +35,7 @@ To perform experiments on different incremental sessions, please modify the inpu
 To perform experiments on different few-shot settings (5-shot or 1-shot), please modify the input arguments - "used_img" and "balanced" accordingly.
 
 ## Acknowledgements
-Our FSCIL ALICE implementation is based on [CEC-CVPR2021](https://github.com/icoz69/CEC-CVPR2021). We thank the authors for making their code public.
+Our project references the codes in the following repos. We thank the authors for making their code public.
+* [CEC](https://github.com/icoz69/CEC-CVPR2021)
+* [IL2A](https://github.com/Impression2805/IL2A)
 
