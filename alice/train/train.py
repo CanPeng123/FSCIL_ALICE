@@ -156,7 +156,7 @@ def train_two_image(session, train_loader, model, angular_criterion, optimizer, 
         arcface_output_2 = model.get_angular_output(images[1])
         angular_loss_1 = angular_criterion(arcface_output_1, target)
         angular_loss_2 = angular_criterion(arcface_output_2, target)
-        angular_loss = 0.5 * angular_loss_1 + 0.5 + angular_loss_2
+        angular_loss = 0.5 * angular_loss_1 + 0.5 * angular_loss_2
         # print('angular_loss: {0}'.format(angular_loss))
         loss = loss + angular_loss
 
